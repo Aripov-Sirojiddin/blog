@@ -1,0 +1,9 @@
+<div>
+     <%= link_to article do %>
+          <%= article.title %>
+     <% end %>
+     <%= link_to edit_article_path(id: article.id) do %>
+          <span><%= article.created_at %></span>
+     <% end %>
+     <p><%= article.body %></p>
+</div>
